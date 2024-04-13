@@ -21,7 +21,6 @@ public class Methods {
             }
         }
     }
-
     public static int sum(int num1, int num2, int... rest) {
         int sum = num1 + num2;
 
