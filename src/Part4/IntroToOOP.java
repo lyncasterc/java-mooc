@@ -18,27 +18,17 @@ public class IntroToOOP {
         // System.out.println(person1.toString());
         System.out.println(person1);
 
-        System.out.println("Num of persons: " + Person.getCount());
-
         person1.growOlder();
         person1.growOlder();
 
         System.out.println(person1.toString());
 
-        System.out.println("is person1 legal: " + person1.isOfLegalAge());
+        System.out.println("is person1 adult: " + person1.isAdult());
 //        gaugeEx();
 
         ArrayList<Person> persons = new ArrayList<>(Arrays.asList(person1));
 
         System.out.println("first person: " + persons.getFirst());
-
-        ArrayList<Person> youngerPersons = new ArrayList<>();
-        for (Person person : persons) {
-            if (person.getAge() < 2) {
-                youngerPersons.add(person);
-            }
-        }
-
 
     }
 
