@@ -1,5 +1,7 @@
 package Part4;
 
+import java.util.Objects;
+
 public class Person {
 
     private String name;
@@ -129,4 +131,9 @@ public class Person {
         return false;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, height, weight);
+
+    }
 }
